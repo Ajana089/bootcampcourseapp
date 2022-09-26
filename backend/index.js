@@ -31,4 +31,7 @@ app.get('/view',function(req,res){
                     res.send(courses);
                 });
 });
-app.listen(3000);
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Server Ready on 3000"); 
+  });
+  
